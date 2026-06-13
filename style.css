@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: #0f0f1a;
+  background: radial-gradient(circle, #1a1a2e, #0f0f1a);
   color: white;
   display: flex;
   justify-content: center;
@@ -11,21 +11,25 @@ body {
 
 .game {
   text-align: center;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .pet-box img {
-  width: 200px;
+  width: 220px;
   animation: float 2s infinite ease-in-out;
 }
 
 @keyframes float {
   0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-12px); }
   100% { transform: translateY(0px); }
 }
 
 .bar {
-  width: 200px;
+  width: 250px;
   height: 20px;
   background: #333;
   margin: 10px auto;
@@ -36,13 +40,19 @@ body {
 #xpBar {
   height: 100%;
   width: 0%;
-  background: limegreen;
+  background: linear-gradient(90deg, lime, cyan);
 }
 
 button {
   padding: 10px 20px;
   margin: 5px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
+  background: #4cafef;
+  color: white;
   cursor: pointer;
+}
+
+button:hover {
+  background: #3a9ad9;
 }
